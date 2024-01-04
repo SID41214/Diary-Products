@@ -1,0 +1,185 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %} Home {% endblock title %}
+    
+    
+
+
+ 
+{% block banner %} 
+<div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static 'images/banner/b1.jpg' %}" class="d-block w-100" alt="banner1">
+      </div>
+      <div class="carousel-item ">
+        <img src="{% static 'images/banner/b2.jpg' %}" class="d-block w-100" alt="banner2">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'images/banner/b3.jpg' %}" class="d-block w-100" alt="banner3">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'images/banner/b4.jpg' %}" class="d-block w-100" alt="banner4">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+ {% endblock banner %}
+
+ 
+ {% block information %} 
+<div class="container" >
+    <div class="row bg-success text-center p-5 text-white border-bottom shadow">
+        <h1>Products</h1>
+        <small class="fs-5">
+               We offers a wide range of products in both liquid milk 
+                and by-product categories. The liquid milk comprises of 5 types of 
+                variants and the by-product comprises of 14 types of variants.
+               
+            A wide range of milk products comprising of fresh milk,
+                Butter,Ghee,Paneer,Curd,Flavoured Milk, Doodh Peda ,Ice cream and skimmed milk powder.
+        </small>
+    </div>
+</div>
+
+
+ {% endblock information %}
+
+
+
+
+{% block main %}
+<div class="container">
+    <h2 class="text-center">Diary Products </h2>
+    <br><br>
+    <div class="row container">
+      
+        <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s;animation-delay: 0.6s;animation-name: none;" >
+            <div class="goodnessec buttermilk smbg">
+                <a href="{% url 'category_with_slug' 'GH' %}" class="text-decoration-none">
+                  <div class="goodnesseccount text-center ">
+                    <img src="{% static 'images/product/buffalo-ghee.png' %}"  style="height: 200px;" class="img-fluid"   alt="pic" >
+                 <p class="mlkpro mt-3" > GHEE</p> 
+                </div>
+                </a>
+            </div>
+        </div>
+            
+        <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s;animation-delay: 0.6s;animation-name: none;" >
+            <div class="goodnessec buttermilk curdbgpro">
+                <a href="{% url 'category_with_slug' 'CR' %}" class="text-decoration-none">
+                  <div class="goodnesseccount text-center">
+                    <img src="{% static 'images/product/curd-total.png' %}"  style="height: 200px;"  class="img-fluid"   alt="pic" >
+                 <p class="mlkpro mt-3 " >CURD</p> 
+                </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s;animation-delay: 0.6s;animation-name: none;" >
+            <div class="goodnessec buttermilk buttermilk">
+                <a href="{% url 'category_with_slug' 'IC' %}"  class="text-decoration-none">
+                  <div class="goodnesseccount text-center ">
+                    <img src="{% static 'images/product/kulfi.png' %}"  style="height: 200px;"  class="img-fluid"   alt="pic" >
+                 <p class="mlkpro mt-3" >kULFI</p> 
+                </div>
+                </a>
+            </div>
+        </div>
+        
+
+
+        </div>
+        <br><br>
+        <div class="row container">
+      
+          <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s;animation-delay: 0.6s;animation-name: none;" >
+              <div class="goodnessec buttermilk smbg">
+                  <a href="{% url 'category_with_slug' 'MS' %}" class="text-decoration-none">
+                    <div class="goodnesseccount text-center ">
+                      <img src="{% static 'images/product/milk-shake-chocolate.png' %}"  style="height: 200px;" class="img-fluid"   alt="pic" >
+                   <p class="mlkpro mt-3" > MILK SHAKE </p> 
+                  </div>
+                  </a>
+              </div>
+          </div>
+              
+          <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s;animation-delay: 0.6s;animation-name: none;" >
+              <div class="goodnessec buttermilk curdbgpro">
+                  <a href="{% url 'category_with_slug' 'ML' %}" class="text-decoration-none">
+                    <div class="goodnesseccount text-center">
+                      <img src="{% static 'images/product/cow-milk.png' %}"  style="height: 200px;"  class="img-fluid"   alt="pic" >
+                   <p class="mlkpro mt-3 " >  MILK</p> 
+                  </div>
+                  </a>
+              </div>
+          </div>
+          <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s;animation-delay: 0.6s;animation-name: none;" >
+              <div class="goodnessec buttermilk buttermilk">
+                  <a href="{% url 'category_with_slug' 'IC' %}"  class="text-decoration-none">
+                    <div class="goodnesseccount text-center ">
+                      <img src="{% static 'images/product/icbars.png' %}"  style="height: 200px;"  class="img-fluid"   alt="pic" >
+                   <p class="mlkpro mt-3" >ICE BARS</p> 
+                  </div>
+                  </a>
+              </div>
+          </div>
+          
+  
+  
+          </div>
+          <br><br>
+          <div class="row container">
+      
+            <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s;animation-delay: 0.6s;animation-name: none;" >
+                <div class="goodnessec buttermilk smbg">
+                    <a href="{% url 'category_with_slug' 'LS' %}" class="text-decoration-none">
+                      <div class="goodnesseccount text-center ">
+                        <img src="{% static 'images/product/sweet-lassi.png' %}"  style="height: 200px;" class="img-fluid"   alt="pic" >
+                     <p class="mlkpro mt-3" > LASSI</p> 
+                    </div>
+                    </a>
+                </div>
+            </div>
+                
+            <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s;animation-delay: 0.6s;animation-name: none;" >
+                <div class="goodnessec buttermilk curdbgpro">
+                    <a href="{% url 'category_with_slug' 'PN' %}" class="text-decoration-none">
+                      <div class="goodnesseccount text-center">
+                        <img src="{% static 'images/product/paneer-fresh.png' %}"  style="height: 200px;"  class="img-fluid"   alt="pic" >
+                     <p class="mlkpro mt-3 " >PANEER</p> 
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s;animation-delay: 0.6s;animation-name: none;" >
+                <div class="goodnessec buttermilk buttermilk">
+                    <a href="{% url 'category_with_slug' 'CZ' %}"  class="text-decoration-none">
+                      <div class="goodnesseccount text-center ">
+                        <img src="{% static 'images/product/processedcheese.png' %}"  style="height: 200px;"  class="img-fluid"   alt="pic" >
+                     <p class="mlkpro mt-3" >CHEESE</p> 
+                    </div>
+                    </a>
+                </div>
+            </div>
+            
+    
+    
+            </div>
+
+        <!-- divrow container end -->
+    </div>
+</div>
+
+<br><br>
+
+{% endblock main%}
+    
